@@ -1,0 +1,57 @@
+$healthy : rgb(62, 168, 0);
+$ordinary : rgb(255, 145, 0);
+$danger : rgb(150, 36, 1);
+
+
+.banner {
+    background-image: url(https://res.cloudinary.com/dfvyityr2/image/upload/v1589280447/cloud_c6ejfc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__text{
+        font-weight: 800;
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+    &__span{
+        animation: 0.8s blink step-end infinite;
+    }
+    &__select{
+        width: 500px;
+        @include mobile{
+            width: 300px;
+        }
+    }
+}
+@keyframes blink {
+from,
+to {
+    color: transparent;
+    }
+50% {
+    color: #fff;
+    }
+}
+.card{
+    &--shadow{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.555);
+    }
+}
+
+
+.footer{
+    &__text{
+        &--sm{
+            font-size: 16px;
+            @include ipad{
+                font-size: 14px;
+            }
+        }
+        &--md{
+            font-size: 22px;
+            @include ipad{
+                font-size: 18px;
+            }
+        }
+    }
+}

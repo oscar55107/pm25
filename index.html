@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/all.css">
+    <title>PM2.5</title>
+</head>
+
+<body>
+    <div class="banner d-flex flex-column justify-content-center align-items-center">
+        <div class="banner__text text-white" id="text"></div>
+        <span class="banner__span text text-white mb-3"></span>
+    </div>
+
+    <div class="container ">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <form>
+                <select class="form-control banner__select my-5 selectArea">
+                    <option disabled>--請選擇城市--</option>
+                    <option>全台灣</option>
+                </select>
+            </form>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4">
+                <h2 class="h3  text-left mb-3 ">重點區域</h2>
+                <div class="list-group btnList">
+                    <a type="button" class="list-group-item list-group-item-action ">全台灣</a>
+                    <a type="button" class="list-group-item list-group-item-action ">臺北市</a>
+                    <a type="button" class="list-group-item list-group-item-action ">臺中市</a>
+                    <a type="button" class="list-group-item list-group-item-action ">臺南市</a>
+                    <a type="button" class="list-group-item list-group-item-action ">高雄市</a>
+                </div>
+            </div>
+            <div class="col-lg-8 ">
+                <h1 class="h3 title text-center mb-3 ">全台PM2.5</h1>
+                <div class="row cardList d-flex justify-content-center">
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center" id="pageId">
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="footer d-flex flex-column justify-content-center text-center mt-4 py-2 bg-light">
+        <h2 class="footer__text--md">PM2.5 即時資料</h2>
+        <span class="mb-1 footer__text--md">資料來源 : 行政院環境保護署</span>
+        <span class="footer__text--sm">Copyright © Liao Guo Zhi</span>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
