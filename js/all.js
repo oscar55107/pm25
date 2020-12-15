@@ -121,6 +121,7 @@ function updateListBtn(e) {
                 selectData.push(data[i]);
             }else if(str === "全台灣"){
                 selectData = data;
+                console.log(selectData);
             }       
         }
         updateList(selectData);
@@ -180,7 +181,7 @@ function switchPage(e) {
     if (e.target.nodeName !== 'A') return;
     const page = e.target.dataset.page;
     let tempItem = [];
-    if (title.textContent === "全台PM2.5") {
+    if (title.textContent === "全台PM2.5" || title.textContent === "全台灣") {
         pagination(data, page);
     } else {
         for (let i = 0; i < data.length; i++) {
